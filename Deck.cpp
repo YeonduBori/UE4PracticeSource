@@ -12,6 +12,8 @@ Deck::Deck(int32 cardNumber)
 {
     cardContainer.Reserve(cardNumber);
     UE_LOG(LogTemp, Log, TEXT("Deck Initialize Card count : %d"), cardNumber);
+    /*Dona*/
+    UE_LOG(LogTemp, Log, TEXT("Deck Initialize Card count : %d"), cardContainer.GetAllocatedSize());
 }
 
 Deck::~Deck()
