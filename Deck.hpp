@@ -25,6 +25,7 @@ public:
 	{
 		cardContainer.Reserve(cardNumber);
     	UE_LOG(LogTemp, Log, TEXT("Deck Initialize Card capacity: %d"), cardNumber);
+		UE_LOG(LogTemp, Log, TEXT("Deck Alloc Size : %d"), cardContainer.GetAllocatedSize());
 	}
 
 	virtual ~Deck()
